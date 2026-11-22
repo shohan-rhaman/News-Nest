@@ -19,7 +19,7 @@ const news = [
 const BreakingNews = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 mt-6">
-      <div className="flex items-center gap-4 bg-gray-200 py-4 px-3 overflow-hidden">
+      <div className="flex items-center gap-4 bg-emerald-100/50 py-4 px-3 overflow-hidden">
         <button className="btn bg-emerald-500 text-white shrink-0">
           Latest News
         </button>
