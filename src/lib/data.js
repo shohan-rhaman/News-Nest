@@ -19,3 +19,14 @@ export const getNewsByCategoryId = async (categoryId) => {
   const data = await res.json();
   return data.data;
 };
+
+export const getNewsDetails = async (newsDetailsId) => {
+  "use cache";
+
+  const res = await fetch(
+    `https://openapi.programming-hero.com/api/news/${newsDetailsId}`,
+  );
+
+  const data = await res.json();
+  return data.data[0];
+};
