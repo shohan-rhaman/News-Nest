@@ -3,6 +3,17 @@ import RightSideBar from '@/components/homepage/news/RightSideBar';
 import { getNewsDetails } from '@/lib/data';
 import React from 'react';
 
+export const generateMetadata = async ({params})=>{
+  const {id} = await params;
+  const news = await getNewsDetails(id);
+  //console.log(news, "news")
+
+  return {
+    title: news.title,
+    description: news.details,
+  }
+};
+
 const NewsDetailPage = async({params}) => {
     const {id} = await params;
     const newsDetails = await getNewsDetails(id)

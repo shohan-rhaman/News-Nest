@@ -39,7 +39,7 @@ const NewsDetailsCard = ({ newsDetails }) => {
         {/* Back to Category Button */}
         <Link
           href={`/category/${category_id}`}
-          className="inline-flex items-center gap-2 bg-[#D72050] hover:bg-[#b81942] text-white text-sm font-medium px-5 py-2.5 rounded-none transition-colors"
+          className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-medium px-5 py-2.5 rounded-none transition-colors"
         >
           <FaArrowLeft size={14} />
           <span>All news in this category</span>
