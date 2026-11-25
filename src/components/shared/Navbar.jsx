@@ -2,6 +2,7 @@ import React from "react";
 import user from "@/assets/user.png";
 import Image from "next/image";
 import NavLink from "./NavLink";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -29,7 +30,9 @@ export default function Navbar() {
           alt="avatar logo"
           className="w-10 h-10 rounded-full object-cover"
         />
-        <button className="btn bg-emerald-500 hover:bg-emerald-400 text-white px-5">Login</button>
+        <Link href={"/login"}>
+          <button className="btn bg-emerald-500 hover:bg-emerald-400 text-white px-5">Login</button>
+        </Link>
       </div>
     </nav>
   );
